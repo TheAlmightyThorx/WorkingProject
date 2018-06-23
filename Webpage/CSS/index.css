@@ -22,11 +22,21 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
             display: flex;
             flex-wrap: wrap;
         }
+		
+		.footContainer {
+			display: flex;
+			flex-wrap: wrap;
+		}
     
         .carTrailerBox{
             box-sizing: border-box;
             flex-basis: 50%;
-        } 
+        }
+		
+		.footerBox{
+			box-sizing: border-box;
+			flex-basis: 50%;
+		}
             
         .logo{
             display: none;
@@ -37,7 +47,11 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
     @media (min-width: 1024px){
         .carTrailerBox{
             flex-basis: 33.3%;
-        }     
+        }
+		
+		.footerBox{
+			flex-basis: 33.3%;
+		}
     }  
 
     /* Size for desktop */
@@ -45,6 +59,10 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
         .carTrailerBox{
             flex-basis: 25%;
         }
+	   
+	   .footerBox{
+			flex-basis: 33.3%;
+		}
     }
 
 /* NORMAL CSS STYLING */ 
@@ -132,31 +150,27 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
         background-color: rgb(233, 180, 102, 0.3);
 }
 
-.info-box-container-2 {
+.footerContainer{
     display: flax;
     flex-wrap: wrap;
 }
 
-.info-box-2 {
+.footerBox {
     background-color: rgb(112, 128, 144, 0.9);
     color: rgb(232, 48, 44);
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
-.pressPicture {
+.footerPicture {
     width: 100%;
     border: 3px solid rgb(255, 255, 255);
+	height: 25px;
+	width: 25px;
+	
 }
 
 
-
-.to-infopage {
-    height: 150px;
-    width: 10%;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 30%;
-    background-color: white;
+.footerPictureText {
+	text-align: center;
 }
-
